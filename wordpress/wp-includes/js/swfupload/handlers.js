@@ -32,7 +32,7 @@ function fileQueued(fileObj) {
 function uploadStart(fileObj) {
 	try {
 		if ( typeof topWin.tb_remove != 'undefined' )
-			topWin.jQuery('#TB_overlay').unbind('click', topWin.tb_remove); 
+			topWin.jQuery('#TB_overlay').unbind('click', topWin.tb_remove);
 	} catch(e){}
 
 	return true;
@@ -212,11 +212,12 @@ function updateMediaForm() {
 	else
 		jQuery('.savebutton').hide();
 
-	// Only show Gallery button when there are at least two files.
-	if ( items.length > 1 )
+	// Only show Gallery buttons when there are at least two files.
+	if ( items.length > 1 ) {
 		jQuery('.insert-gallery').show();
-	else
+	} else {
 		jQuery('.insert-gallery').hide();
+	}
 }
 
 function uploadSuccess(fileObj, serverData) {
@@ -355,7 +356,7 @@ function cancelUpload() {
 
 // remember the last used image size, alignment and url
 jQuery(document).ready(function($){
-	$('input[type="radio"]', '#media-items').live('click', function(){
+	$( 'input[type="radio"]', '#media-items' ).on( 'click', function(){
 		var tr = $(this).closest('tr');
 
 		if ( $(tr).hasClass('align') )
@@ -364,7 +365,7 @@ jQuery(document).ready(function($){
 			setUserSetting('imgsize', $(this).val());
 	});
 
-	$('button.button', '#media-items').live('click', function(){
+	$( 'button.button', '#media-items' ).on( 'click', function(){
 		var c = this.className || '';
 		c = c.match(/url([^ '"]+)/);
 		if ( c && c[1] ) {

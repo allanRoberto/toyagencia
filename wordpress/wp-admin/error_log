@@ -1,0 +1,4 @@
+[16-Jun-2017 13:45:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/toyagencia/public_html/wp-content/themes/Divi/functions.php:99) in /home/toyagencia/public_html/wp-includes/option.php on line 837
+[16-Jun-2017 13:45:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/toyagencia/public_html/wp-content/themes/Divi/functions.php:99) in /home/toyagencia/public_html/wp-includes/option.php on line 838
+[30-Jun-2017 19:48:05 UTC] PHP Parse error:  syntax error, unexpected ''l' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/toyagencia/public_html/wp-content/themes/Divi/includes/builder/main-modules.php on line 9224
+[06-Jul-2017 14:23:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/toyagencia/public_html/wp-content/plugins/new-royalslider Ftp throw/classes/NewRoyalSliderGallery.php on line 77
